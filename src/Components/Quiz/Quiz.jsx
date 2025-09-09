@@ -86,7 +86,7 @@ const Quiz = () => {
       
       <h1>Quiz App</h1>
 
-      {!user ? (
+      {user ? (
         
         <form onSubmit={handleSubmit}>
              <div className="enter">
