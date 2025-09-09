@@ -107,7 +107,7 @@ const Quiz = () => {
 
      
 
-      {user && (
+      {!user && (
         <>
           <hr />
           {!count ? (
