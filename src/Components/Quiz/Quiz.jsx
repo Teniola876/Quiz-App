@@ -163,7 +163,7 @@ const Quiz = () => {
             </>
           )}
 
-          {!count ? (
+          {count ? (
             <>
               <h2>
               {user}  You Scored {score} out of {quizData.length}
