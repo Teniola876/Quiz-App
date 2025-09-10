@@ -17,7 +17,7 @@ const Quiz = () => {
     if (count > 0 && user ) {
       setTimeout(() => {
         setCount(count - 1);
-      }, 500);
+      }, 700);
     } else {
       clearInterval(count);
     }
