@@ -153,7 +153,7 @@ const Quiz = () => {
                     {question.option4}
                   </li>
                 </ul>
-                {/* {count > 0 ? ( <button onClick={next}>Next</button>): (<h2>Time up</h2>)} */}
+                {/* {!count >= 0 ? ( <button onClick={next}>Next</button>): (<h2>Time up</h2>)} */}
                 <button onClick={next}>Next</button>
               </>
 
@@ -163,7 +163,7 @@ const Quiz = () => {
             </>
           )}
 
-          {!count ? (
+          {!count ?  (
             <>
               <h2>
               {user}  You Scored {score} out of {quizData.length}
@@ -173,9 +173,9 @@ const Quiz = () => {
           ) : (
             <></>
           )}
-          {/* <h2>
+          {/* { <h2>
             You Scored {score} out of {quizData.length}
-          </h2>
+          </h2> }
           <button onClick={reset}> Reset </button> */}
         </>
       )}
